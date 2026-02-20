@@ -13,7 +13,8 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v4
-
+      - name: Debug - list repository files
+        run: ls -R
       - name: Copy app to EC2
         uses: appleboy/scp-action@v0.1.4
         with:
