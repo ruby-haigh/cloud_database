@@ -37,6 +37,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run tests
+        working-directory: codebases/message_server
         run: |
           pytest
 
